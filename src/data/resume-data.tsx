@@ -34,15 +34,15 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Florida State University",
-      degree: "Bachelor's Degrees in Finance and Accounting",
-      start: "2014",
-      end: "2018",
-    },
-    {
-      school: "Florida State University",
       degree: "Master's Degree in Accounting",
       start: "2018",
       end: "2019",
+    },
+    {
+      school: "Florida State University",
+      degree: "Bachelor's Degrees in Finance and Accounting",
+      start: "2014",
+      end: "2018",
     },
   ],
   work: [
