@@ -54,7 +54,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Present",
       description:
-        "Authored native parsing and rendering algorithms for mermaid strings utilizing Svelte, upgraded the product's landing page to the latest version of SvelteKit, and operated within a fully type-safe system in TypeScript, leveraging generic functions and custom interfaces.",
+        "Authored native parsing and rendering algorithms for mermaid strings in Svelte, upgraded the product's landing page to the latest version of SvelteKit, and operated in a fully type-safe system in TypeScript with generic functions and custom interfaces.",
     },
     {
       company: ".d Machining",
