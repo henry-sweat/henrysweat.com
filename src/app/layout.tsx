@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import React from "react";
+import Header from "@/components/ui/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
       <Analytics />
     </html>
   );

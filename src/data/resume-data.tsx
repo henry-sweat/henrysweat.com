@@ -5,7 +5,7 @@ export const RESUME_DATA = {
   initials: "HS",
   location: "Florida, USA",
   locationLink: "https://www.google.com/maps/place/Florida",
-  headline: "Full-Stack Engineer && Open-Source Contributor",
+  headline: "Full-Stack Engineer & Open-Source Contributor",
   about:
     "Hello! 👋 I'm Henry Sweat, a Software Engineer focused on building full-stack applications in TypeScript, React/Redux, Svelte, Node.js/Express.js, and SQL/NoSQL databases. Most recently, I have made contributions to Svelvet, a lightweight component library for building interactive, node-based UIs and diagrams in Svelte.",
   // avatarUrl: "",
@@ -81,6 +81,7 @@ export const RESUME_DATA = {
     "JavaScript",
     "TypeScript",
     "React/Next.js",
+    "Tailwind",
     "Svelte",
     "Node.js",
     "SQL/NoSQL",
