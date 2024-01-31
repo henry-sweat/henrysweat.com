@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
+import Socials from "@/components/ui/socials";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
@@ -20,62 +21,25 @@ export default function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <Section>
           <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold">About</h2>
-            {/* <div className="flex items-center justify-between md:hidden">
-              <div className="flex gap-x-1 font-mono text-sm text-muted-foreground print:hidden">
-                {RESUME_DATA.contact.email ? (
-                  <Button
-                    className="size-7"
-                    variant="outline"
-                    size="icon"
-                    asChild
-                  >
-                    <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                      <MailIcon className="size-4" />
-                    </a>
-                  </Button>
-                ) : null}
-                {RESUME_DATA.contact.tel ? (
-                  <Button
-                    className="size-7"
-                    variant="outline"
-                    size="icon"
-                    asChild
-                  >
-                    <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                      <PhoneIcon className="size-4" />
-                    </a>
-                  </Button>
-                ) : null}
-                {RESUME_DATA.contact.social.map((social) => (
-                  <Button
-                    key={social.name}
-                    className="size-7"
-                    variant="outline"
-                    size="icon"
-                    asChild
-                  >
-                    <a href={social.url}>
-                      <social.icon className="size-4" />
-                    </a>
-                  </Button>
-                ))}
+            <div className="w-full flex-col">
+              <div className="xs:hidden flex w-full items-center justify-between">
+                <h2 className="text-xl font-bold">{RESUME_DATA.name}</h2>
+                <Socials />
               </div>
-              <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
-                {RESUME_DATA.contact.email ? (
-                  <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                    <span className="underline">
-                      {RESUME_DATA.contact.email}
-                    </span>
-                  </a>
-                ) : null}
-                {RESUME_DATA.contact.tel ? (
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                    <span className="underline">{RESUME_DATA.contact.tel}</span>
-                  </a>
-                ) : null}
-              </div>
-            </div> */}
+              <h2 className="xs:block hidden text-xl font-bold">
+                {RESUME_DATA.name}
+              </h2>
+              <p className="max-w-md items-center text-pretty py-1 font-mono text-xs text-muted-foreground">
+                <a
+                  className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                  href={RESUME_DATA.locationLink}
+                  target="_blank"
+                >
+                  <GlobeIcon className="size-3" />
+                  {RESUME_DATA.location}
+                </a>
+              </p>
+            </div>
           </div>
 
           <p className="text-pretty font-mono text-sm text-muted-foreground">
@@ -169,7 +133,7 @@ export default function Page() {
         </Section> */}
       </section>
 
-      <CommandMenu
+      {/* <CommandMenu
         links={[
           {
             url: RESUME_DATA.personalWebsiteUrl,
@@ -180,7 +144,7 @@ export default function Page() {
             title: socialMediaLink.name,
           })),
         ]}
-      />
+      /> */}
     </main>
   );
 }
