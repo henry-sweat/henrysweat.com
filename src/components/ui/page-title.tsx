@@ -1,5 +1,3 @@
-import Socials from "./socials";
-
 interface IPageTitleProps {
   title: string;
 }
