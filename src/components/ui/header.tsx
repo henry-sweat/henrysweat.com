@@ -14,14 +14,16 @@ export default function Header() {
           <nav className="flex flex space-x-4">
             <Link
               href={"/"}
-              className={`max-w-md text-pretty text-lg text-muted-foreground hover:underline`}
+              className={`${
+                pathname === "/" ? "" : ""
+              } max-w-md text-pretty text-lg text-muted-foreground hover:underline`}
             >
               home
             </Link>
             <Link
               href={"/blog"}
               className={`${
-                pathname === "/blog" ? "underline" : ""
+                pathname === "/blog" ? "" : ""
               } max-w-md text-pretty text-lg text-muted-foreground hover:underline`}
             >
               blog
@@ -29,7 +31,7 @@ export default function Header() {
             <Link
               href={"/bookshelf"}
               className={`${
-                pathname === "/bookshelf" ? "underline" : ""
+                pathname === "/bookshelf" ? "" : ""
               } max-w-md text-pretty text-lg text-muted-foreground hover:underline`}
             >
               bookshelf

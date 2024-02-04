@@ -33,7 +33,7 @@ const CardTitle = React.forwardRef<
   <h3
     ref={ref}
     className={cn(
-      "text-2xl font-semibold leading-none tracking-tight",
+      "text-3xl font-semibold leading-none tracking-tight",
       className,
     )}
     {...props}
@@ -52,6 +52,21 @@ const CardDescription = React.forwardRef<
   />
 ));
 CardDescription.displayName = "CardDescription";
+
+const CardDate = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, ...props }, ref) => (
+  <p
+    ref={ref}
+    className={cn(
+      "font-mono text-xs leading-none tracking-tight text-muted-foreground/80",
+      className,
+    )}
+    {...props}
+  />
+));
+CardDate.displayName = "CardDate";
 
 const CardContent = React.forwardRef<
   HTMLDivElement,
@@ -82,5 +97,6 @@ export {
   CardFooter,
   CardTitle,
   CardDescription,
+  CardDate,
   CardContent,
 };
