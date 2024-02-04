@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { BlogCard } from "@/components/blog-card";
+import { BlogCard } from "@/components/ui/blog-card";
 import { getBlogPosts } from "@/lib/blog";
 import PageTitle from "@/components/ui/page-title";
 

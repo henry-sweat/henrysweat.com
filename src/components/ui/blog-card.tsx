@@ -1,5 +1,5 @@
-import { Card, CardHeader, CardContent, CardDate, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
+import { Card, CardHeader, CardContent, CardDate, CardTitle } from "./card";
+import { Badge } from "./badge";
 import Link from "next/link";
 import { formatDate } from "@/lib/blog";
 

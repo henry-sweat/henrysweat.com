@@ -1,4 +1,4 @@
-import { CustomMDX } from "@/components/mdx";
+import { CustomMDX } from "@/components/ui/mdx";
 import { getBlogPosts, formatDate } from "@/lib/blog";
 import { notFound } from "next/navigation";
 
