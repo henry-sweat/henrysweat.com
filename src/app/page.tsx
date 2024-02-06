@@ -2,7 +2,6 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import Socials from "@/components/ui/socials";
 import { GlobeIcon } from "lucide-react";
 import { RESUME_DATA } from "@/data/resume-data";
 
@@ -17,13 +16,7 @@ export default function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <Section>
           <div className="w-full flex-col">
-            <div className="xs:hidden flex w-full items-center justify-between">
-              <h2 className="text-xl font-bold">{RESUME_DATA.name}</h2>
-              <Socials />
-            </div>
-            <h2 className="xs:block hidden text-xl font-bold">
-              {RESUME_DATA.name}
-            </h2>
+            <h2 className="text-xl font-bold">{RESUME_DATA.name}</h2>
             <p className="max-w-md items-center text-pretty py-1 font-mono text-xs text-muted-foreground">
               <a
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
