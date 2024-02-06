@@ -1,5 +1,6 @@
 import { CustomMDX } from "@/components/ui/mdx";
-import { getBlogPosts, formatDate } from "@/lib/blog";
+import { getBlogPosts } from "@/lib/blog";
+import { formatDate } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
 interface IParams {
@@ -16,7 +17,7 @@ export default function Blog({ params }: IParams) {
   }
 
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto px-4 py-2 print:p-12 md:px-16 md:py-4">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto px-4 py-2 md:mb-12 md:px-16 md:py-4">
       <section className="mx-auto w-full max-w-2xl space-y-6 bg-white">
         <div className="flex-col">
           <h2 className="text-2xl font-bold leading-tight tracking-tight">

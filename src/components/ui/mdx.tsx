@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { highlight } from "sugar-high";
 import React from "react";
+import { TweetComponent } from "../tweet/tweet";
 
 export function CustomMDX(props: any) {
   return (
@@ -24,6 +25,7 @@ let components = {
   a: CustomLink,
   Callout,
   code: Code,
+  StaticTweet: TweetComponent,
 };
 
 function createHeading(level: any) {

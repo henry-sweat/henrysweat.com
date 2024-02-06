@@ -5,29 +5,30 @@ export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), "src", "content"));
 }
 
-export function formatDate(date: string) {
-  const targetDate = new Date(date);
-
-  const formattedDate = targetDate.toLocaleString("en-us", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
-
-  return formattedDate;
-}
-
 function getMDXData(dir: string) {
   let mdxFiles = getMDXFiles(dir);
   return mdxFiles.map((file) => {
     let { metadata, content } = readMDXFile(path.join(dir, file));
     let slug = path.basename(file, path.extname(file));
+    let tweetIds = extractTweetIds(content);
     return {
       metadata,
       slug,
+      tweetIds,
       content,
     };
   });
+}
+
+function extractTweetIds(content: string): string[] {
+  const tweetMatches = content.match(/<StaticTweet\sid="\d+"\s\/>/g) || [];
+
+  return tweetMatches
+    .map((tweet) => {
+      const idMatch = tweet.match(/\d+/);
+      return idMatch ? idMatch[0] : "";
+    })
+    .filter(Boolean);
 }
 
 function getMDXFiles(dir: string) {
