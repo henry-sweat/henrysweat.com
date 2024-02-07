@@ -1,20 +1,10 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MDXRemote } from "next-mdx-remote/rsc";
 import { highlight } from "sugar-high";
-import React from "react";
-import { TweetComponent } from "../tweet/tweet";
+import { TweetComponent } from "./tweet";
 
-export function CustomMDX(props: any) {
-  return (
-    <MDXRemote
-      {...props}
-      components={{ ...components, ...(props.components || {}) }}
-    />
-  );
-}
-
-let components = {
+export let components = {
   h1: createHeading(1),
   h2: createHeading(2),
   h3: createHeading(3),

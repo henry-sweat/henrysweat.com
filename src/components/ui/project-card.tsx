@@ -4,8 +4,8 @@ import {
   CardContent,
   CardDescription,
   CardTitle,
-} from "./ui/card";
-import { Badge } from "./ui/badge";
+} from "./card";
+import { Badge } from "./badge";
 
 interface Props {
   title: string;

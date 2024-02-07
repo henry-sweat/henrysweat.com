@@ -1,7 +1,7 @@
-import { CustomMDX } from "@/components/ui/mdx";
-import { getBlogPosts } from "@/lib/blog";
-import { formatDate } from "@/lib/utils";
 import { notFound } from "next/navigation";
+import { getBlogPost } from "../blog";
+import { formatDate } from "@/lib/utils";
+import { CustomMDX } from "@/components/mdx";
 
 interface IParams {
   params: {
@@ -9,8 +9,8 @@ interface IParams {
   };
 }
 
-export default function Blog({ params }: IParams) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export default function Page({ params }: IParams) {
+  let post = getBlogPost(params.slug);
 
   if (!post) {
     notFound();
@@ -28,7 +28,7 @@ export default function Blog({ params }: IParams) {
           </p>
         </div>
 
-        <article className="prose prose-md dark:prose-invert">
+        <article className="prose-md prose dark:prose-invert">
           <CustomMDX source={post.content} />
         </article>
       </section>
@@ -37,7 +37,7 @@ export default function Blog({ params }: IParams) {
 }
 
 export async function generateMetadata({ params }: IParams) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+  let post = getBlogPost(params.slug);
   return {
     title: post?.metadata.title,
     description: "a blog post by henry sweat",

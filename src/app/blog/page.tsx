@@ -1,15 +1,11 @@
-import { Metadata } from "next";
+import { getAllBlogPosts } from "@/app/blog/blog";
 import { Section } from "@/components/ui/section";
 import { BlogCard } from "@/components/ui/blog-card";
-import { getBlogPosts } from "@/lib/blog";
 import PageTitle from "@/components/ui/page-title";
+import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "HS | Blog",
-};
-
-export default function Blog() {
-  const blogPosts = getBlogPosts();
+export default function Page() {
+  const blogPosts = getAllBlogPosts();
 
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto px-4 py-2 md:mb-12 md:px-16 md:py-4">
@@ -32,3 +28,7 @@ export default function Blog() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: "HS | Blog",
+};
