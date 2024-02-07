@@ -15,15 +15,15 @@ interface IMetadata {
   tags: string[];
 }
 
-export function getAllBlogPosts(): IBlogPostData[] {
-  return getBlogPostData(pathToContentDirectory);
-}
-
 export function getBlogPost(slug: string): IBlogPostData | undefined {
   return getAllBlogPosts().find((post) => post.slug === slug);
 }
 
-function getBlogPostData(dir: string): IBlogPostData[] {
+export function getAllBlogPosts(): IBlogPostData[] {
+  return getMDXData(pathToContentDirectory);
+}
+
+function getMDXData(dir: string): IBlogPostData[] {
   let mdxFiles = getMDXFiles(dir);
   return mdxFiles.map((file) => {
     let slug = path.basename(file, path.extname(file));
