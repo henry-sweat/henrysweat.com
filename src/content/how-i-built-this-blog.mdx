@@ -54,13 +54,13 @@ Writing the blog posts in markdown was about developer convenience. It's simply 
 
 ### "CMS"
 
-All blog posts are stored in a `/content` directory on the server. When you visit this page _/blog/how-i-built-this-blog_, the page retrieves the how-i-built-this-blog.mdx file in the `/content` folder, parses the markdown to html, and sends the fully rendered page over to you. This approach comes with built-in version control via Git, and updating a blog post is as simple as editing a markdown file and pushing those changes. Love it. 🎯
+All blog posts are stored in a `/content` directory on the server. When you visit this page _/blog/how-i-built-this-blog_, the page retrieves the how-i-built-this-blog.mdx file in the `/content` folder, parses the markdown to HTML, and sends the fully rendered page over to you. This approach comes with built-in version control via Git, and updating a blog post is as simple as editing a markdown file and pushing those changes. Love it. 🎯
 
 ## Bringing It All Together
 
 Our goals were:
 
-1. _minimize time it takes for the client to render the first bit of content to the DOM_
+1. _minimize the time it takes for the client to render the first bit of content to the DOM_
 
 With next.js, all of the blog posts are rendered on the server at request-time, then served to the client efficiently. This ensures the shortest amount of time possible for the client to begin seeing data on their screen.
 
