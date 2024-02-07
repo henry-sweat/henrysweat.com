@@ -9,7 +9,7 @@ tags: ["next.js", "typescript", "tailwind", "MDX"]
 
 **_"This could easily be an Express server serving static HTML."_** - _anonymousRedditUser_
 
-This is the general sentiment from engineers when they see _another_ custom blog of any complexity. However, there is a lot of truth to it given the ease of spinning up an express server or making a medium account. So, I wanted this project to be simple and intentional in order to justify its existence.
+This is the general sentiment from engineers when they see _another_ custom blog of any complexity. However, there is a lot of truth to their words considering the ease of spinning up an Express server or making a Medium account. So, this project needed to be simple and intentional in order to justify its existence.
 
 1. [The Goal](#the-goal)
 2. [What Tools and Why](#what-tools-and-why)
@@ -21,40 +21,40 @@ This is the general sentiment from engineers when they see _another_ custom blog
 
 **Minimize:** time and effort
 
-For UX, we care about the time it takes for the client to render the first bit of content to the DOM and the amount of JavaScript needed client-side to fully render the page. For DX, it is minimizing the time and effort for both end-to-end development and adding/updating the blog posts.
+For UX, I'm concerned with how quickly the client can render the first bit of content to the DOM and the amount of JavaScript required client-side to fully render the page. For DX, the goal is to minimize the time and effort needed for both end-to-end development and for adding/updating blog posts.
 
 ## What Tools and Why
 
 ### next.js
 
-Let’s hear out the above concerns. I have my express server running and it’s sending the rendered html of my blog posts to the client. Now comes the time to style this blog– and, admittedly, I'm lazy. So, I install `tailwindcss` to take advantage of its pre-built classes.
+Let’s hear out the above concerns. Suppose I have an Express server running and that sends the rendered HTML of my blog posts to the client. But, it needs styling, and manually styling this blog would be inefficient when `@tailwindcss/typography` exists.
 
-As a result, the amount of javascript being sent to the client has increased, with most of it being unused tailwind code. I install and configure `webpack` to perform tree shaking and bundling on the javascript that is being sent to the client in order to reduce the bundle size.
+As a result, the amount of JavaScript being sent to the client has increased, with most of it being unused `tailwind` code. To mitigate this, I install and configure `webpack` to perform tree shaking and bundling on the JavaScript sent to the client.
 
-Writing a blog post in html is clunky and truly unnecessary, therefore I install a markdown library to produce html from text.
+Additionally, I install a markdown library because writing a blog post in HTML is clunky and truly unnecessary.
 
-I still want server-side rendering, which again, is not that difficult with purely static content on an express server. Server-side rendering is a fancy phrase for sending raw html as the response to an HTTP request, so I just need to make sure the translation from markdown to html is happening server-side.
+I still want server-side rendering, which is a fancy phrase for sending raw HTML as the response to an HTTP request, so I ensure the translation from markdown to html is happening server-side.
 
-So far, my blog has:
+So far, this app has:
 
 - a backend
 - styling libraries
 - bundling
 - server-side rendering
 
-Effectively, I recreated the basics of next.js without its additional features. Yes, it is entirely feasible to build this blog using Express, a bundler, and a handful of third-party libraries. But, it is also true that frameworks are valuable, and using them without compromising user experience or developer workload is justified.
+Effectively, I recreated the basics of next.js without getting any of its additional features. Yes, it is entirely feasible to build this blog using Express, a bundler, and a handful of third-party libraries. But, it is also true that frameworks are valuable, and using them without compromising user experience or developer workload is justified.
 
 I’ll stick with `npx create-next-app@latest`.
 
 ### mdx.js
 
-Writing the blog posts in markdown was about developer convenience. It's simply quicker to write than HTML, and mdx.js enhances this by enabling JSX-embedded markdown. This enables custom React components inline with markdown. Explore their [website](https://mdxjs.com/) and see the following tweet showcased in a custom Tweet component—a feature uniquely afforded by `mdx` and `react-tweet`.
+Writing the blog posts in markdown was about developer convenience. It's simply quicker to write markdown than HTML, and mdx.js enhances this by enabling JSX-embedded markdown. This means you can add custom React components inline with markdown. Explore their [website](https://mdxjs.com/) and see the following tweet rendered from a custom Tweet component—a feature uniquely afforded by `mdx` and `react-tweet`.
 
 <StaticTweet id="1717596665690091542" />
 
 ### "CMS"
 
-All blog posts are stored in a `/content` directory on the server. When you visit this page _/blog/how-i-built-this-blog_, the page retrieves the how-i-built-this-blog.mdx file in the content folder, parses the markdown to html, and sends the fully rendered page over to you. This approach comes with built-in version control through git, and updating a blog post is as simple as editing a markdown file and pushing those changes. Love it. 🎯
+All blog posts are stored in a `/content` directory on the server. When you visit this page _/blog/how-i-built-this-blog_, the page retrieves the how-i-built-this-blog.mdx file in the `/content` folder, parses the markdown to html, and sends the fully rendered page over to you. This approach comes with built-in version control via Git, and updating a blog post is as simple as editing a markdown file and pushing those changes. Love it. 🎯
 
 ## Bringing It All Together
 
@@ -66,18 +66,37 @@ With next.js, all of the blog posts are rendered on the server at request-time, 
 
 2. _minimize the amount of JavaScript needed client-side to fully render the page_
 
-Since every blog post is a React Server Component, the page is fully rendered on the server ensuring minimial processing on the client to render the page completely.
+Since every blog post is a React Server Component, the page is fully rendered on the server ensuring minimial processing on the client.
 
 3. _minimize the time and effort for end-to-end development_
 
-With `npx create-next-app@latest`, the only development left is the blog landing page, dynamic routing required to serve individual blog posts, the markdown parsing functions, any custom components with `mdx`, and styling with `tailwindcss`.
+With `npx create-next-app@latest`, development is focused on the blog landing page, dynamic routing required to serve individual blog posts, the markdown parsing functions, any custom components with `mdx`, and styling with `tailwindcss`.
 
-4. _minimize the time and effort adding/updating the blog posts_
+4. _minimize the time and effort for adding/updating the blog posts_
 
 To add a new blog post to the blog, simply drop a new .mdx file into the content directory. And, to update existing blog posts, make the necessary changes directly in the markdown files.
 
+### File Structure
+
+My blog lives under the _/blog_ route on my personal site, which is a next.js application. Below is trimmed down look at the files directly associated with the blog functionality.
+
+3 folders, 4 files, plus 1 file for each blog post:
+
+```
+├── /blog  // route for blog landing page
+│   ├── /[slug]  // dynamic route for blog posts
+│   │   ├── page.tsx // Page Component for blog posts
+│   │   └── mdx.tsx // custom MDX components
+│   ├── page.tsx // Page Component for blog landing page
+│   └── blog.ts // retrieve blog-post.mdx and convert to html
+└── /content // directory for storing blog posts
+│   └── blog-post.mdx // example blog post file
+```
+
 ### Closing Thoughts
 
-At first glance, making a blog might appear to be trivial or mundane; and it still might be. But, without having to bear the cognitive load of complex technical requirements and deadlines that comes with client-work, building this blog helped me appreciate and understand the nuances of my web application that otherwise would usually go unnoticed. For such a simple application, the tools become increasingly difficult to justify. Writing this blog post forced me to justify those choices. And, now I have a response to the echoes of “Why isn’t this just an Express server?”
+At first glance, making a blog might appear to be trivial or mundane; and it still might be. But, without having to bear the load of complex technical requirements and deadlines that come with client-work, building this blog deepened my appreciation and understanding of the nuances of my web application that otherwise would usually go unnoticed. For such a simple application, the tools become increasingly difficult to justify. Writing this blog post forced me to have a clear rationale for each one that I used.
 
-Much of my inspiration came from the blogs of [Lee Robinson](https://leerob.io/blog) and [Dan Abramov](https://overreacted.io/); both blogs are incredibly clean and efficient. Please check out the source code for mine [here](https://github.com/henry-sweat/cv). If you have any comments or questions, don't hesitate to reach out. I would love to hear from you.
+Now, I have my rebuttal to the question, "Why isn’t this just an Express server?"
+
+Much of my inspiration came from the blogs of [Lee Robinson](https://leerob.io/blog) and [Dan Abramov](https://overreacted.io/); both blogs are strikingly clean and efficient. Please check out the source code for mine [here](https://github.com/henry-sweat/cv). If you have any comments or questions, don't hesitate to reach out. I would love to hear from you.
