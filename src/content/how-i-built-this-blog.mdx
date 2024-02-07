@@ -27,7 +27,7 @@ For UX, I'm concerned with how quickly the client can render the first bit of co
 
 ### next.js
 
-Let’s hear out the above concerns. Suppose I have an Express server running and that sends the rendered HTML of my blog posts to the client. But, it needs styling, and manually styling this blog would be inefficient when `@tailwindcss/typography` exists.
+Let’s hear out the above concerns. Suppose I have an Express server running and sending the rendered HTML of my blog posts to the client. But, it needs styling, and manually styling this blog would be inefficient when `@tailwindcss/typography` exists.
 
 As a result, the amount of JavaScript being sent to the client has increased, with most of it being unused `tailwind` code. To mitigate this, I install and configure `webpack` to perform tree shaking and bundling on the JavaScript sent to the client.
 
