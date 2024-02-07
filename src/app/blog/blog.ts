@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-interface IMDXData {
+interface IBlogPostData {
   slug: string;
   metadata: IMetadata;
   content: string;
@@ -15,15 +15,15 @@ interface IMetadata {
   tags: string[];
 }
 
-export function getAllBlogPosts(): IMDXData[] {
-  return getMDXData(pathToContentDirectory);
+export function getAllBlogPosts(): IBlogPostData[] {
+  return getBlogPostData(pathToContentDirectory);
 }
 
-export function getBlogPost(slug: string) {
+export function getBlogPost(slug: string): IBlogPostData | undefined {
   return getAllBlogPosts().find((post) => post.slug === slug);
 }
 
-function getMDXData(dir: string): IMDXData[] {
+function getBlogPostData(dir: string): IBlogPostData[] {
   let mdxFiles = getMDXFiles(dir);
   return mdxFiles.map((file) => {
     let slug = path.basename(file, path.extname(file));
@@ -41,15 +41,11 @@ function getMDXFiles(dir: string): string[] {
 }
 
 function readMDXFile(filePath: string) {
-  let rawContent = fs.readFileSync(filePath, "utf-8");
-  return parseFrontmatter(rawContent);
-}
-
-function parseFrontmatter(fileContent: string) {
+  let fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);
   return {
-    metadata: data as IMDXData["metadata"],
-    content: content as IMDXData["content"],
+    metadata: data as IBlogPostData["metadata"],
+    content: content as IBlogPostData["content"],
   };
 }
 
