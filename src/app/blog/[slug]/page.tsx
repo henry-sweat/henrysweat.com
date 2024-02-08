@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getBlogPost } from "../blog";
+import { getAllBlogPosts, getBlogPost } from "../blog";
 import { formatDate } from "@/lib/utils";
 import { CustomMDX } from "@/components/mdx";
 
@@ -34,6 +34,13 @@ export default function Page({ params }: IParams) {
       </section>
     </main>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = getAllBlogPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: IParams) {
