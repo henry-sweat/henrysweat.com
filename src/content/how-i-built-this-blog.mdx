@@ -2,7 +2,7 @@
 title: "Building This Blog With Next.js"
 publishedAt: "2024-02-06"
 summary: "an overview of the technologies implemented to make my personal site"
-tags: ["next.js", "typescript", "tailwind", "mdx"]
+tags: ["Next.js", "TypeScript", "TailwindCSS", "MDX"]
 ---
 
 **_"Why reinvent the wheel when platforms like Medium exist?"_** - _hackerNewsCommenter_
@@ -25,15 +25,9 @@ For UX, I'm concerned with how quickly the client can render the first bit of co
 
 ## What Tools and Why
 
-### next.js
+### Next.js
 
-Let’s hear out the above concerns. Suppose I have an Express server running and sending the rendered HTML of my blog posts to the client. But, it needs styling, and manually styling this blog would be inefficient when `@tailwindcss/typography` exists.
-
-As a result, the amount of JavaScript being sent to the client has increased, with most of it being unused `tailwind` code. To mitigate this, I install and configure `webpack` to perform tree shaking and bundling on the JavaScript sent to the client.
-
-Additionally, I install a markdown library because writing a blog post in HTML is clunky and truly unnecessary.
-
-I still want server-side rendering, which is a fancy phrase for sending raw HTML as the response to an HTTP request, so I ensure the translation from markdown to html is happening server-side.
+Let’s hear out the above concerns. Suppose I have an Express server running, and it is sending the rendered HTML of my blog posts to the client. I install `tailwindcss` to expedite the styling process, a markdown library to speed up writing the blog posts, and `webpack` to perform tree shaking and bundling. I still want “server-side rendering” (_aka_ sending pre-rendered HTML to the client), so I ensure the translation from markdown to HTML is happening server-side.
 
 So far, this app has:
 
@@ -42,9 +36,50 @@ So far, this app has:
 - bundling
 - server-side rendering
 
-Effectively, I recreated the basics of next.js without getting any of its additional features. Yes, it is entirely feasible to build this blog using Express, a bundler, and a handful of third-party libraries. But, it is also true that frameworks are valuable, and using them without compromising user experience or developer workload is justified.
+Effectively, I recreated the basics of Next.js without getting any of its additional features. Yes, it is entirely feasible to build this blog using Express, a bundler, and a handful of third-party libraries. But, it is also true that frameworks are valuable, and using them without compromising user experience or developer workload is justified.
 
 I’ll stick with `npx create-next-app@latest`.
+
+#### Static Rendering vs Dynamic Rendering
+
+In short, [Static Rendering](https://nextjs.org/docs/app/building-your-application/rendering/server-components#static-rendering-default) involves generating the content of a route at build time. Rather than having to generate the HTML for a blog post on each request ([Dynamic Rendering](https://nextjs.org/docs/app/building-your-application/rendering/server-components#dynamic-rendering)), the server is able to send pre-rendered HTML immediately to the client. This strategy is particularly effective for routes with non-user-specific data that can be predetermined at the time of building (i.e. static blog posts like these).
+
+Next.js automatically determines the optimal rendering method for us at build time. Without explicit configuration, Next.js implements static rendering for the root route of the blog. But, since the routes for individual blog posts are dynamically generated using _/blog/[slug]_, Next.js defaults these routes to be dynamically rendered.
+
+We can check the build logs to see the rendering decisions made by Next.js:
+
+<Image
+  alt={`Build logs before generateStaticParams`}
+  src={`/images/dynamicRenderLogs.png`}
+  width={2812 / 2}
+  height={2140 / 2}
+  priority
+/>
+
+Next.js's decision to dynamically render _/blog/[slug]_ makes sense; the app has no way of knowing all of the possible routes it needs to statically generate at build-time.
+
+But, in fact, we _do_ know the routes at build time: they are just the file names of my blog posts. Next.js provides a function, [`generateStaticParams`](https://nextjs.org/docs/app/api-reference/functions/generate-static-params), to pass these potential routes to our Page component for _/blog/[slug]_. This function can be used in combination with dynamic routes to statically generate at build time instead of on-demand at request time. With only the code below, all of the routes for individual blog posts will now be statically generated:
+
+```js
+export async function generateStaticParams() {
+  const posts = getAllBlogPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+```
+
+And, we can confirm that these route are being statically rendered by checking the new build logs:
+
+<Image
+  alt={`Build logs after generateStaticParams`}
+  src={`/images/staticRenderLogs.png`}
+  width={2812 / 2}
+  height={2140 / 2}
+  priority
+/>
+
+In regards to UX, this strategy resulted in a remarkable **25% reduction** in the time it took for content to begin rendering to the DOM, which is a testament to the effectiveness of static rendering with Next.js! 🍻
 
 ### mdx.js
 
@@ -62,7 +97,7 @@ Our goals were:
 
 1. _minimize the time it takes for the client to render the first bit of content to the DOM_
 
-With next.js, all of the blog posts are rendered on the server at request-time, then served to the client efficiently. This ensures the shortest amount of time possible for the client to begin seeing data on their screen.
+With Next.js and static rendering, all of the blog posts are rendered on the server at build time, then served to the client efficiently. This ensures the shortest amount of time possible for the client to begin seeing data on their screen.
 
 2. _minimize the amount of JavaScript needed client-side to fully render the page_
 

@@ -2,15 +2,16 @@ import { notFound } from "next/navigation";
 import { getAllBlogPosts, getBlogPost } from "../blog";
 import { formatDate } from "@/lib/utils";
 import { CustomMDX } from "@/components/mdx";
+import { Metadata } from "next";
 
-interface IParams {
+interface IProps {
   params: {
     slug: string;
   };
 }
 
-export default function Page({ params }: IParams) {
-  let post = getBlogPost(params.slug);
+export default function Page({ params }: IProps) {
+  const post = getBlogPost(params.slug);
 
   if (!post) {
     notFound();
@@ -43,7 +44,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: IParams) {
+export async function generateMetadata({ params }: IProps): Promise<Metadata> {
   let post = getBlogPost(params.slug);
   return {
     title: post?.metadata.title,
