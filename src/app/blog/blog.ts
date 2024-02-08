@@ -16,10 +16,12 @@ interface IMetadata {
 }
 
 export function getBlogPost(slug: string): IBlogPostData | undefined {
+  console.log("getting this blog posts:", slug);
   return getAllBlogPosts().find((post) => post.slug === slug);
 }
 
 export function getAllBlogPosts(): IBlogPostData[] {
+  console.log("getting all blog posts...");
   return getMDXData(pathToContentDirectory);
 }
 
