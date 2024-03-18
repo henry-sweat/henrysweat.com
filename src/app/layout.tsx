@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import React from "react";
 import Header from "@/components/ui/header";
@@ -30,7 +29,6 @@ export default function RootLayout({
         <Header />
         {children}
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
