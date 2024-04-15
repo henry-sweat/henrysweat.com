@@ -59,7 +59,7 @@ export const RESUME_DATA = {
     {
       company: ".d Machining",
       link: "https://www.dotdmachining.com",
-      badges: [],
+      badges: ["Orlando, FL"],
       title: "Business Intelligence Developer",
       start: "2021",
       end: "2023",
@@ -69,7 +69,7 @@ export const RESUME_DATA = {
     {
       company: "Ernst & Young (EY)",
       link: "https://www.ey.com/en_us/financial-services",
-      badges: [],
+      badges: ["New York City"],
       title: "Financial Services Auditor",
       start: "2019",
       end: "2021",
