@@ -80,10 +80,12 @@ export const RESUME_DATA = {
   skills: [
     "JavaScript",
     "TypeScript",
-    "React/Next.js",
-    "Tailwind",
-    "Svelte",
+    "React",
     "Node.js",
+    "Express",
+    "Next.js",
+    "Tailwind CSS",
+    "Svelte",
     "SQL/NoSQL",
   ],
   projects: [
