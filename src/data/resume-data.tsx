@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Florida",
   headline: "Full-Stack Engineer & Open-Source Contributor",
   about:
-    "Hello! 👋 I'm a Software Engineer focused on building full-stack applications in TypeScript, React, Svelte, Node.js, Express, Next.js, and SQL/NoSQL databases. Most recently, I have made contributions to Svelvet, a lightweight component library for building interactive, node-based UIs and diagrams in Svelte.",
+    "Hello! 👋 I’m a Software Engineer specializing in full-stack applications using TypeScript, Node.js, Vue, and Fastify. Most recently, I’ve been working on Empath—-Capital One’s card servicing platform, an application used by tens of thousands of customer service agents around the world.",
   // avatarUrl: "",
   personalWebsiteUrl: "https://henrysweat.com",
   contact: {
@@ -47,12 +47,22 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Capital One",
+      link: "https://www.capitalone.com/",
+      badges: ["DC Area"],
+      title: "Senior Software Engineer",
+      start: "2024",
+      end: "Present",
+      description:
+        "Collaborated with Design to implement a full redesign of our application's header + navigation bars to meet new regulatory requirements and enhance the user experience, all while maintaining full ADA compliance.",
+    },
+    {
       company: "Svelvet",
       link: "https://svelvet.io",
-      badges: ["Remote"],
+      badges: ["Remote", "Contract"],
       title: "Software Engineer",
       start: "2023",
-      end: "Present",
+      end: "2024",
       description:
         "Authored native parsing and rendering algorithms for mermaid strings in Svelte, upgraded the product's landing page to the latest version of SvelteKit, and operated in a fully type-safe system in TypeScript with generic functions and custom interfaces.",
     },
@@ -60,7 +70,7 @@ export const RESUME_DATA = {
       company: ".d Machining",
       link: "https://www.dotdmachining.com",
       badges: ["Orlando, FL"],
-      title: "Business Intelligence Developer",
+      title: "Software Engineer",
       start: "2021",
       end: "2023",
       description:
@@ -74,14 +84,17 @@ export const RESUME_DATA = {
       start: "2019",
       end: "2021",
       description:
-        "Leveraged python to audit all significant accounts for unregulated hedge funds, PE fund of funds, and large investment banks.",
+        "Leveraged Python to audit significant accounts for unregulated hedge funds, PE fund of funds, and large investment banks.",
     },
   ],
   skills: [
     "JavaScript",
     "TypeScript",
+    "Fastify",
+    "Vue",
     "React",
     "Node.js",
+    "AWS",
     "Express",
     "Next.js",
     "Tailwind CSS",
