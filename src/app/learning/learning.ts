@@ -53,5 +53,5 @@ const pathToContentDirectory = path.join(
   process.cwd(),
   "src",
   "content",
-  "blog",
+  "learning",
 );
