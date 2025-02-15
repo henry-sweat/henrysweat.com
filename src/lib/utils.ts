@@ -9,6 +9,7 @@ export function formatDate(date: string) {
   const targetDate = new Date(date);
 
   const formattedDate = targetDate.toLocaleString("en-us", {
+    timeZone: "UTC",
     month: "long",
     day: "numeric",
     year: "numeric",
