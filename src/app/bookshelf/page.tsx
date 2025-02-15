@@ -14,7 +14,7 @@ export default function Page() {
           <PageTitle title={"my bookshelf"} />
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {
-              "here are some of the best things I have found on the internet, made by people much smarter than me."
+              "if my blog came up short, then look no further! here are the best things I have found on the internet, made by people much smarter than me."
             }
           </p>
         </Section>
