@@ -12,6 +12,11 @@ export default function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <Section>
           <PageTitle title={"my bookshelf"} />
+          <p className="text-pretty font-mono text-sm text-muted-foreground">
+            {
+              "here are some of the best things I have found on the internet, made by people much smarter than me."
+            }
+          </p>
         </Section>
         <Section>
           {bookshelfItems.map((item) => (
