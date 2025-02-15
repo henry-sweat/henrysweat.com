@@ -6,7 +6,6 @@ import {
   CardTitle,
 } from "./card";
 import { Badge } from "./badge";
-import Link from "next/link";
 
 interface IBookshelfCardProps {
   title: string;
@@ -22,7 +21,7 @@ export function BookshelfCard({
   url,
 }: IBookshelfCardProps) {
   return (
-    <Link href={`${url}`}>
+    <a href={url} target="_blank" rel="noopener noreferrer">
       <Card className="flex flex-col overflow-hidden border border-muted p-3 transition-colors hover:bg-accent">
         <CardHeader className="">
           <div className="space-y-1">
@@ -46,6 +45,6 @@ export function BookshelfCard({
           </div>
         </CardContent>
       </Card>
-    </Link>
+    </a>
   );
 }
