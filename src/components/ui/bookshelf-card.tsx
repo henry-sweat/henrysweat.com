@@ -23,12 +23,14 @@ export function BookshelfCard({
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <Card className="flex flex-col overflow-hidden border border-muted p-3 transition-colors hover:bg-accent">
-        <CardHeader className="">
-          <div className="space-y-1">
+        <CardHeader>
+          <div className="flex items-center space-x-2">
             <CardTitle className="text-lg leading-tight tracking-tight">
               {title}
             </CardTitle>
-            <CardDescription>{author}</CardDescription>
+            <CardDescription className="leading-tight tracking-tight">
+              {author}
+            </CardDescription>
           </div>
         </CardHeader>
         <CardContent className="mt-auto flex">
