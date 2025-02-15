@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "title": "Taste for Makers",
+      "url": "https://www.paulgraham.com/taste.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blog",
+      "tags": ["blog post", "design"]
+    }
+  ]
+}
