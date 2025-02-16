@@ -72,5 +72,13 @@
       "type": "blogPost",
       "tags": ["blog post", "startups"]
     },
+    {
+      "title": "Why Smart People Have Bad Ideas",
+      "url": "https://paulgraham.com/bronze.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post", "startups"]
+    }
   ]
 }
