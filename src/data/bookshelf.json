@@ -7,6 +7,70 @@
       "dateAdded": "2025-02-15",
       "type": "blogPost",
       "tags": ["blog post"]
-    }
+    },
+    {
+      "title": "What You Can't Say",
+      "url": "https://paulgraham.com/say.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post"]
+    },
+    {
+      "title": "How to Make Wealth",
+      "url": "https://paulgraham.com/wealth.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post", "advice"]
+    },
+    {
+      "title": "Mind the Gap",
+      "url": "https://paulgraham.com/gap.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post"]
+    },
+    {
+      "title": "It's Charisma, Stupid",
+      "url": "https://paulgraham.com/charisma.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post"]
+    },
+    {
+      "title": "What You'll Wish You'd Known",
+      "url": "https://paulgraham.com/hs.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post", "advice"]
+    },
+    {
+      "title": "How to Start a Startup",
+      "url": "https://paulgraham.com/start.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post", "startups"]
+    },
+    {
+      "title": "Writing, Briefly",
+      "url": "https://paulgraham.com/writing44.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post", "startups"]
+    },
+    {
+      "title": "Return of the Mac",
+      "url": "https://paulgraham.com/mac.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-15",
+      "type": "blogPost",
+      "tags": ["blog post", "startups"]
+    },
   ]
 }
