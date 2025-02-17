@@ -87,6 +87,14 @@
       "dateAdded": "2025-02-17",
       "type": "blogPost",
       "tags": ["blog post", "startups"]
+    },
+    {
+      "title": "Inequality and Risk",
+      "url": "https://www.paulgraham.com/inequality.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-17",
+      "type": "blogPost",
+      "tags": ["blog post"]
     }
   ]
 }
