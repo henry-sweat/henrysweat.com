@@ -95,6 +95,14 @@
       "dateAdded": "2025-02-17",
       "type": "blogPost",
       "tags": ["blog post"]
+    },
+    {
+      "title": "What I Did This Summer",
+      "url": "https://www.paulgraham.com/sfp.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-17",
+      "type": "blogPost",
+      "tags": ["blog post", "startups", "y-combinator"]
     }
   ]
 }
