@@ -1,8 +1,8 @@
 ---
-title: "Missing Semester, Lesson 1: Course overview + the shell"
+title: "Missing Semester"
 publishedAt: "2025-02-17"
-summary: "my notes on the lesson"
-tags: ["shell"]
+summary: "my notes from the lectures"
+tags: ["shell", "vim"]
 ---
 
 commands learned:
@@ -18,6 +18,12 @@ commands learned:
 - man, opens up the manual for a command in the terminal window
 - sudo, run a command as the super user, or root
 - chmod, changes the modes (permissions) of a given file
+- grep, finds a match to the passed-in pattern in the passed-in file
+- find, recursively searches for files
+- locate, finds filenames using a database
+- rg (ripgrep), more poewrful version of grep
+- zip, make a zip file from passed in files
+- xargs, take the stream of stdout and convert it list of arguments, ex. find /Users/henry/Desktop | xargs zip stuff
 
 operators:
 
@@ -25,3 +31,10 @@ operators:
 - `>` redirect output stream of a program and writes it to a file, ex. command > input.txt
 - `>>` same as above, except appends it
 - `|` chain the output of one command as the input of another
+
+Control Flow:
+
+- conditional statements
+- iteration statements
+
+Globbing: using wildcards to invoke commands across files that match the provided pattern
