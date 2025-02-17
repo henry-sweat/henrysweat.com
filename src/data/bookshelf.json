@@ -79,6 +79,14 @@
       "dateAdded": "2025-02-15",
       "type": "blogPost",
       "tags": ["blog post", "startups"]
+    },
+    {
+      "title": "Hiring Is Obsolete",
+      "url": "https://www.paulgraham.com/hiring.html",
+      "author": "Paul Graham",
+      "dateAdded": "2025-02-17",
+      "type": "blogPost",
+      "tags": ["blog post", "startups"]
     }
   ]
 }
