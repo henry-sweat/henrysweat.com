@@ -19,15 +19,17 @@ export default function Page() {
           </p>
         </Section>
         <Section>
-          {bookshelfItems.map((item) => (
-            <BookshelfCard
-              title={item.title}
-              author={item.author}
-              url={item.url}
-              tags={item.tags}
-              key={`key-${item.url}`}
-            />
-          ))}
+          {bookshelfItems.map((item) =>
+            item.favorite ? (
+              <BookshelfCard
+                title={item.title}
+                author={item.author}
+                url={item.url}
+                tags={item.tags}
+                key={`key-${item.url}`}
+              />
+            ) : null,
+          )}
         </Section>
       </section>
     </main>
