@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Florida",
   headline: "Full-Stack Engineer & Open-Source Contributor",
   about:
-    "Hello! 👋 I'm a Software Engineer specializing in full-stack applications using TypeScript, Node.js, Vue, and Fastify. Most recently, I've been working on Empath—Capital One's card servicing platform used by tens of thousands of customer service agents worldwide.",
+    "Hello! 👋 I'm a full-stack software engineer at Capital One working on Empath, a card servicing platform used by tens of thousands of customer service agents to service millions of customers worldwide. Previously, I audited hedge funds at EY.",
   // avatarUrl: "",
   personalWebsiteUrl: "https://henrysweat.com",
   contact: {
