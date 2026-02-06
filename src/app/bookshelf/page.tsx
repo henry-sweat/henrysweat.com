@@ -1,18 +1,18 @@
 import { Section } from "@/components/ui/section";
-import PageTitle from "@/components/ui/page-title";
 import { BookshelfCard } from "@/components/ui/bookshelf-card";
 import { getAllBookshelfItems } from "./bookshelf";
+import TerminalHeader from "@/components/ui/terminal-header";
 import { Metadata } from "next";
 
 export default function Page() {
   const bookshelfItems = getAllBookshelfItems();
 
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto px-4 py-2 md:mb-12 md:px-16 md:py-4">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+    <main className="mx-auto flex w-full max-w-3xl flex-col items-start p-8 font-mono text-sm">
+      <TerminalHeader cwd="~/bookshelf" />
+      <section className="mt-8 w-full space-y-8">
         <Section>
-          <PageTitle title={"my bookshelf"} />
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
+          <p className="text-foreground">
             {
               "if my blog came up short, then look no further! here are the best things I have found on the internet, made by people much smarter than me."
             }

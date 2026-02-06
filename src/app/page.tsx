@@ -1,116 +1,201 @@
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Metadata } from "next";
-import { Section } from "@/components/ui/section";
-import { GlobeIcon } from "lucide-react";
-import { RESUME_DATA } from "@/data/resume-data";
-import { ScrambleText } from "@/components/ui/scramble-text";
+"use client";
 
-export const metadata: Metadata = {
-  title: RESUME_DATA.name,
-  description: RESUME_DATA.about,
-};
+import { useEffect, useState } from "react";
+import Link from "next/link";
+
+const LS_COMMAND = "ls";
+const SYSINFO_COMMAND = "sysinfo";
+
+const SYSINFO_OUTPUT =
+  "Hello! 👋 I'm a senior full-stack engineer at Capital One working on Empath, a card-servicing platform used by tens of thousands of customer service agents that service millions of customers worldwide. Previously, I audited hedge funds at EY.";
+
+const NAV_ITEMS = [
+  { name: "blog", href: "/blog" },
+  { name: "bookshelf", href: "/bookshelf" },
+];
+
+function Prompt() {
+  return (
+    <>
+      <span className="text-blue-400">henry</span>
+      <span className="text-gray-600">@</span>
+      <span className="text-gray-500">mac-mini</span>
+      <span className="text-gray-600">:~</span>
+      <span className="text-gray-500">&nbsp;$&nbsp;&nbsp;</span>
+    </>
+  );
+}
+
+function Cursor() {
+  return (
+    <span className="inline-block h-4 w-2 animate-blink self-center bg-foreground" />
+  );
+}
 
 export default function Page() {
+  const [phase, setPhase] = useState<
+    | "idle"
+    | "ls-typing"
+    | "ls-result"
+    | "sysinfo-typing"
+    | "sysinfo-output"
+    | "done"
+    | "finished"
+  >("idle");
+  const [typedChars, setTypedChars] = useState(0);
+  const [sysinfoText, setSysinfoText] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Phase 0: Blink cursor for a moment
+  useEffect(() => {
+    if (phase !== "idle") return;
+    const timeout = setTimeout(() => setPhase("ls-typing"), 2000);
+    return () => clearTimeout(timeout);
+  }, [phase]);
+
+  // Phase 1: Type "ls"
+  useEffect(() => {
+    if (phase !== "ls-typing") return;
+    let i = 0;
+    const interval = setInterval(() => {
+      i++;
+      setTypedChars(i);
+      if (i >= LS_COMMAND.length) {
+        clearInterval(interval);
+        setTimeout(() => {
+          setTypedChars(0);
+          setPhase("ls-result");
+        }, 400);
+      }
+    }, 120);
+    return () => clearInterval(interval);
+  }, [phase]);
+
+  // Phase 2: Show nav, pause, then start typing sysinfo
+  useEffect(() => {
+    if (phase !== "ls-result") return;
+    const timeout = setTimeout(() => setPhase("sysinfo-typing"), 800);
+    return () => clearTimeout(timeout);
+  }, [phase]);
+
+  // Phase 3: Type system_profiler command
+  useEffect(() => {
+    if (phase !== "sysinfo-typing") return;
+    let i = 0;
+    const interval = setInterval(() => {
+      i++;
+      setTypedChars(i);
+      if (i >= SYSINFO_COMMAND.length) {
+        clearInterval(interval);
+        setTimeout(() => {
+          setTypedChars(0);
+          setPhase("sysinfo-output");
+        }, 400);
+      }
+    }, 50);
+    return () => clearInterval(interval);
+  }, [phase]);
+
+  // Phase 4: Type sysinfo output character by character
+  useEffect(() => {
+    if (phase !== "sysinfo-output") return;
+    const fullText = SYSINFO_OUTPUT;
+    let i = 0;
+    const interval = setInterval(() => {
+      i++;
+      setSysinfoText(fullText.slice(0, i));
+      if (i >= fullText.length) {
+        clearInterval(interval);
+        setPhase("done");
+      }
+    }, 18);
+    return () => clearInterval(interval);
+  }, [phase]);
+
+  // Phase 5: Blink cursor then hide it
+  useEffect(() => {
+    if (phase !== "done") return;
+    const timeout = setTimeout(() => setPhase("finished"), 3000);
+    return () => clearTimeout(timeout);
+  }, [phase]);
+
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto px-4 py-2 print:p-12 md:mb-12 md:px-16 md:py-4">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
-        <Section>
-          <div className="w-full flex-col">
-            <ScrambleText
-              text={RESUME_DATA.name}
-              className="text-xl font-bold"
-              as="h2"
-              duration={1000}
-            />
-            <p className="max-w-md items-center text-pretty py-1 font-mono text-xs text-muted-foreground">
-              <a
-                className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                href={RESUME_DATA.locationLink}
-                target="_blank"
-              >
-                <GlobeIcon className="size-3" />
-                <ScrambleText text={RESUME_DATA.location} duration={1200} />
-              </a>
-            </p>
-          </div>
+    <main className="mx-auto flex h-screen w-full max-w-3xl flex-col items-start p-8 font-mono text-sm">
+      {/* Header: prompt + nav */}
+      <div className="flex h-6 w-full items-center justify-between">
+        <div className="flex items-center">
+          <Prompt />
+          {phase === "idle" && <Cursor />}
+          {phase === "ls-typing" && (
+            <>
+              <span className="text-foreground">
+                {LS_COMMAND.slice(0, typedChars)}
+              </span>
+              <Cursor />
+            </>
+          )}
+          {phase === "sysinfo-typing" && (
+            <>
+              <span className="text-foreground">
+                {SYSINFO_COMMAND.slice(0, typedChars)}
+              </span>
+              <Cursor />
+            </>
+          )}
+        </div>
+        {phase !== "idle" && phase !== "ls-typing" && (
+          <>
+            <div className="hidden gap-6 sm:flex">
+              {NAV_ITEMS.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-blue-400 hover:underline"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-gray-500 hover:text-foreground sm:hidden"
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? "[ x ]" : "[ ≡ ]"}
+            </button>
+          </>
+        )}
+      </div>
 
-          <ScrambleText
-            text={RESUME_DATA.about}
-            className="text-pretty font-mono text-sm text-muted-foreground"
-            as="p"
-            duration={2000}
+      {/* Mobile dropdown */}
+      {menuOpen && phase !== "idle" && phase !== "ls-typing" && (
+        <div className="mt-2 flex flex-col gap-2 sm:hidden">
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-blue-400 hover:underline"
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      )}
+
+      {/* Sysinfo output */}
+      {sysinfoText && (
+        <p className="mt-8 w-full leading-6 text-foreground">
+          {sysinfoText}
+          <span
+            className={`inline-block h-3.5 w-2 translate-y-0.5 bg-foreground ${
+              phase === "sysinfo-output" || phase === "done"
+                ? "animate-blink"
+                : "opacity-0"
+            }`}
           />
-        </Section>
-        {/* <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
-          {RESUME_DATA.work.map((work) => {
-            return (
-              <Card key={work.company}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
-                        {work.company}
-                      </a>
-
-                      <span className="inline-flex gap-x-1">
-                        {work.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {work.start} - {work.end}
-                    </div>
-                  </div>
-
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.title}
-                  </h4>
-                </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
-                </CardContent>
-              </Card>
-            );
-          })}
-        </Section>
-        <Section>
-          <h2 className="text-xl font-bold">Education</h2>
-          {RESUME_DATA.education.map((education) => {
-            return (
-              <Card key={education.school}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
-              </Card>
-            );
-          })}
-        </Section>
-        <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
-        </Section> */}
-      </section>
+        </p>
+      )}
     </main>
   );
 }

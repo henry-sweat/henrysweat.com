@@ -1,18 +1,16 @@
 import { getAllBlogPosts } from "@/app/blog/blog";
 import { Section } from "@/components/ui/section";
 import { BlogCard } from "@/components/ui/blog-card";
-import PageTitle from "@/components/ui/page-title";
+import TerminalHeader from "@/components/ui/terminal-header";
 import { Metadata } from "next";
 
 export default function Page() {
   const blogPosts = getAllBlogPosts();
 
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto px-4 py-2 md:mb-12 md:px-16 md:py-4">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
-        <Section>
-          <PageTitle title={"my blog"} />
-        </Section>
+    <main className="mx-auto flex w-full max-w-3xl flex-col items-start p-8 font-mono text-sm">
+      <TerminalHeader cwd="~/blog" />
+      <section className="mt-8 w-full space-y-8">
         <Section>
           {blogPosts.map((blogPost) => (
             <BlogCard
