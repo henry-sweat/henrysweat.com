@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getAllBlogPosts, getBlogPost } from "../blog";
 import { formatDate } from "@/lib/utils";
 import { CustomMDX } from "@/components/mdx";
+import TerminalHeader from "@/components/ui/terminal-header";
 import { Metadata } from "next";
 
 interface IProps {
@@ -18,18 +19,17 @@ export default function Page({ params }: IProps) {
   }
 
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto px-4 py-2 md:mb-12 md:px-16 md:py-4">
-      <section className="mx-auto w-full max-w-2xl space-y-6 bg-white">
+    <main className="mx-auto flex w-full max-w-3xl flex-col items-start p-8 font-mono text-sm">
+      <TerminalHeader cwd="~/blog" />
+      <section className="mt-8 w-full space-y-6">
         <div className="flex-col">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight">
-            {post.metadata.title}
-          </h2>
-          <p className="max-w-md items-center text-pretty py-1 font-mono text-xs text-muted-foreground">
+          <h2 className="text-lg text-foreground">{post.metadata.title}</h2>
+          <p className="text-xs text-gray-500">
             {formatDate(post.metadata.publishedAt)}
           </p>
         </div>
 
-        <article className="prose-md prose dark:prose-invert">
+        <article className="prose-md prose prose-invert">
           <CustomMDX source={post.content} />
         </article>
       </section>
