@@ -2,8 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 
-const CHARS =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*";
+const CHARS = "0123456789abcdef";
 
 interface ScrambleTextProps {
   text: string;
