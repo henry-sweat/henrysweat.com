@@ -33,7 +33,7 @@ export default function Page() {
             {RESUME_DATA.about}
           </p>
         </Section>
-        <Section>
+        {/* <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
@@ -100,7 +100,7 @@ export default function Page() {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
-        </Section>
+        </Section> */}
       </section>
     </main>
   );
