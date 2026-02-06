@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Florida",
   headline: "Full-Stack Engineer & Open-Source Contributor",
   about:
-    "Hello! 👋 I'm a full-stack software engineer at Capital One working on Empath, a card servicing platform used by tens of thousands of customer service agents to service millions of customers worldwide. Previously, I audited hedge funds at EY.",
+    "Hello! 👋 I'm a senior full-stack engineer at Capital One working on Empath, a card-servicing platform used by tens of thousands of customer service agents that service millions of customers worldwide. Previously, I audited hedge funds at EY.",
   // avatarUrl: "",
   personalWebsiteUrl: "https://henrysweat.com",
   contact: {
