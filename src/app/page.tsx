@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon } from "lucide-react";
 import { RESUME_DATA } from "@/data/resume-data";
+import { ScrambleText } from "@/components/ui/scramble-text";
 
 export const metadata: Metadata = {
   title: RESUME_DATA.name,
@@ -16,7 +17,12 @@ export default function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <Section>
           <div className="w-full flex-col">
-            <h2 className="text-xl font-bold">{RESUME_DATA.name}</h2>
+            <ScrambleText
+              text={RESUME_DATA.name}
+              className="text-xl font-bold"
+              as="h2"
+              duration={1000}
+            />
             <p className="max-w-md items-center text-pretty py-1 font-mono text-xs text-muted-foreground">
               <a
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
@@ -24,14 +30,17 @@ export default function Page() {
                 target="_blank"
               >
                 <GlobeIcon className="size-3" />
-                {RESUME_DATA.location}
+                <ScrambleText text={RESUME_DATA.location} duration={1200} />
               </a>
             </p>
           </div>
 
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
-            {RESUME_DATA.about}
-          </p>
+          <ScrambleText
+            text={RESUME_DATA.about}
+            className="text-pretty font-mono text-sm text-muted-foreground"
+            as="p"
+            duration={2000}
+          />
         </Section>
         {/* <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
