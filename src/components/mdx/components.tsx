@@ -78,6 +78,9 @@ function Callout(props: any) {
 }
 
 function Code({ children, ...props }: any) {
+  if (!props.className) {
+    return <code {...props}>{children}</code>;
+  }
   let codeHTML = highlight(children);
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
 }
