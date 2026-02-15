@@ -6,8 +6,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "When To Do What You Love",
@@ -15,8 +16,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Founder Mode",
@@ -24,8 +26,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "The Right Kind of Stubborn",
@@ -33,8 +36,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "How to Start Google",
@@ -42,8 +46,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Do Great Work",
@@ -51,8 +56,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "How to Get New Ideas",
@@ -60,8 +66,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Need to Read",
@@ -69,8 +76,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "What I've Learned from Users",
@@ -78,8 +86,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Heresy",
@@ -87,8 +96,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Putting Ideas into Words",
@@ -96,8 +106,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Beyond Smart",
@@ -105,8 +116,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Weird Languages",
@@ -114,8 +126,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Work Hard",
@@ -123,8 +136,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "A Project of One's Own",
@@ -132,8 +146,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Fierce Nerds",
@@ -141,8 +156,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Crazy New Ideas",
@@ -150,8 +166,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How People Get Rich Now",
@@ -159,8 +176,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Write Simply",
@@ -168,8 +186,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "What I Worked On",
@@ -177,8 +196,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Earnestness",
@@ -186,8 +206,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Billionaires Build",
@@ -195,8 +216,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Airbnbs",
@@ -204,8 +226,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Think for Yourself",
@@ -213,8 +236,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Early Work",
@@ -222,8 +246,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Modeling a Wealth Tax",
@@ -231,8 +256,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Four Quadrants of Conformism",
@@ -240,8 +266,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Orthodox Privilege",
@@ -249,8 +276,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Coronavirus and Credibility",
@@ -258,8 +286,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Write Usefully",
@@ -267,8 +296,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Being a Noob",
@@ -276,8 +306,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Haters",
@@ -285,8 +316,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Two Kinds of Moderate",
@@ -294,8 +326,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Fashionable Problems",
@@ -303,8 +336,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Having Kids",
@@ -312,8 +346,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "The Lesson to Unlearn",
@@ -321,8 +356,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Novelty and Heresy",
@@ -330,8 +366,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Bus Ticket Theory of Genius",
@@ -339,8 +376,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "General and Surprising",
@@ -348,8 +386,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Charisma / Power",
@@ -357,8 +396,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Risk of Discovery",
@@ -366,8 +406,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Life is Short",
@@ -375,8 +416,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Economic Inequality",
@@ -384,8 +426,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Refragmentation",
@@ -393,8 +436,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "A Way to Detect Bias",
@@ -402,8 +446,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Write Like You Talk",
@@ -411,8 +456,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Default Alive or Default Dead?",
@@ -420,8 +466,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Why It's Safe for Founders to Be Nice",
@@ -429,8 +476,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Change Your Name",
@@ -438,8 +486,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Ronco Principle",
@@ -447,8 +496,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What Doesn't Seem Like Work?",
@@ -456,8 +506,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Don't Talk to Corp Dev",
@@ -465,8 +516,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Let the Other 95% of Great Programmers In",
@@ -474,8 +526,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Be an Expert in a Changing World",
@@ -483,8 +536,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How You Know",
@@ -492,8 +546,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Fatal Pinch",
@@ -501,8 +556,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Mean People Fail",
@@ -510,8 +566,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Before the Startup",
@@ -519,8 +576,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Raise Money",
@@ -528,8 +586,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Investor Herd Dynamics",
@@ -537,8 +596,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Convince Investors",
@@ -546,8 +606,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Do Things that Don't Scale",
@@ -555,8 +616,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "How to Get Startup Ideas",
@@ -564,8 +626,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Startup = Growth",
@@ -573,8 +636,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Black Swan Farming",
@@ -582,8 +646,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Top of My Todo List",
@@ -591,8 +656,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Writing and Speaking",
@@ -600,8 +666,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How Y Combinator Started",
@@ -609,8 +676,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Defining Property",
@@ -618,8 +686,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Frighteningly Ambitious Startup Ideas",
@@ -627,8 +696,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "A Word to the Resourceful",
@@ -636,8 +706,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Schlep Blindness",
@@ -645,8 +716,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Snapshot: Viaweb, June 1998",
@@ -654,8 +726,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Why Startup Hubs Work",
@@ -663,8 +736,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Patent Pledge",
@@ -672,8 +746,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Subject: Airbnb",
@@ -681,8 +756,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Founder Control",
@@ -690,8 +766,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What We Look for in Founders",
@@ -699,8 +776,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Where to See Silicon Valley",
@@ -708,8 +786,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "High Resolution Fundraising ",
@@ -717,8 +796,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What Happened to Yahoo ",
@@ -726,8 +806,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Future of Startup Funding ",
@@ -735,8 +816,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Acceleration of Addictiveness",
@@ -744,8 +826,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "The Top Idea in Your Mind ",
@@ -753,8 +836,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "How to Lose Time and Money ",
@@ -762,8 +846,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Organic Startup Ideas",
@@ -771,8 +856,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Apple's Mistake",
@@ -780,8 +866,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What Startups Are Really Like",
@@ -789,8 +876,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Persuade xor Discover ",
@@ -798,8 +886,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The List of N Things",
@@ -807,8 +896,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Anatomy of Determination ",
@@ -816,8 +906,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What Kate Saw in Silicon Valley  ",
@@ -825,8 +916,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Trouble with the Segway",
@@ -834,8 +926,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Ramen Profitable",
@@ -843,8 +936,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Maker's Schedule, Manager's Schedule ",
@@ -852,8 +946,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Why Twitter is a Big Deal",
@@ -861,8 +956,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Founder Visa",
@@ -870,8 +966,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Five Founders",
@@ -879,8 +976,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Relentlessly Resourceful",
@@ -888,8 +986,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "How to Be an Angel Investor",
@@ -897,8 +996,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Why TV Lost",
@@ -906,8 +1006,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What I've Learned from Hacker News",
@@ -915,8 +1016,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Startups in 13 Sentences",
@@ -924,8 +1026,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Keep Your Identity Small  ",
@@ -933,8 +1036,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "After Credentials",
@@ -942,8 +1046,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Could VC be a Casualty of the Recession?",
@@ -951,8 +1056,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The High-Res Society",
@@ -960,8 +1066,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Other Half of \"Artists Ship\"  ",
@@ -969,8 +1076,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Why to Start a Startup in a Bad Economy",
@@ -978,8 +1086,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "A Fundraising Survival Guide",
@@ -987,8 +1096,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Pooled-Risk Company Management Company",
@@ -996,8 +1106,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Cities and Ambition",
@@ -1005,8 +1116,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Disconnecting Distraction",
@@ -1014,8 +1126,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Lies We Tell Kids",
@@ -1023,8 +1136,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Be Good",
@@ -1032,8 +1146,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Why There Aren't More Googles",
@@ -1041,8 +1156,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Some Heroes",
@@ -1050,8 +1166,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Disagree",
@@ -1059,8 +1176,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "You Weren't Meant to Have a Boss",
@@ -1068,8 +1186,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "A New Venture Animal",
@@ -1077,8 +1196,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Trolls",
@@ -1086,8 +1206,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Six Principles for Making New Things",
@@ -1095,8 +1216,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Why to Move to a Startup Hub",
@@ -1104,8 +1226,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Future of Web Startups",
@@ -1113,8 +1236,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How Not to Die",
@@ -1122,8 +1246,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Holding a Program in One's Head",
@@ -1131,8 +1256,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Stuff",
@@ -1140,8 +1266,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Equity Equation",
@@ -1149,8 +1276,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Hacker's Guide to Investors",
@@ -1158,8 +1286,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Two Kinds of Judgement",
@@ -1167,8 +1296,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Why to Not Not Start a Startup",
@@ -1176,8 +1306,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Is It Worth Being Wise?",
@@ -1185,8 +1316,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Learning from Founders",
@@ -1194,8 +1326,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How Art Can Be Good",
@@ -1203,8 +1336,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The 18 Mistakes That Kill Startups",
@@ -1212,8 +1346,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "A Student's Guide to Startups",
@@ -1221,8 +1356,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Present to Investors",
@@ -1230,8 +1366,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Copy What You Like",
@@ -1239,8 +1376,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Island Test",
@@ -1248,8 +1386,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Power of the Marginal",
@@ -1257,8 +1396,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": false
     },
     {
       "title": "Why Startups Condense in America",
@@ -1266,8 +1406,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Be Silicon Valley",
@@ -1275,8 +1416,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Hardest Lessons for Startups to Learn",
@@ -1284,8 +1426,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "See Randomness",
@@ -1293,8 +1436,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "How to Do What You Love",
@@ -1302,8 +1446,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Good and Bad Procrastination",
@@ -1311,8 +1456,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "How to Fund a Startup",
@@ -1320,8 +1466,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Ideas for Startups",
@@ -1329,8 +1476,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What I Did this Summer",
@@ -1338,8 +1486,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Inequality and Risk",
@@ -1347,8 +1496,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Hiring is Obsolete",
@@ -1356,8 +1506,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Submarine",
@@ -1365,8 +1516,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Why Smart People Have Bad Ideas",
@@ -1374,8 +1526,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Return of the Mac",
@@ -1383,8 +1536,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Writing,  Briefly",
@@ -1392,8 +1546,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Undergraduation",
@@ -1401,8 +1556,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Start a Startup",
@@ -1410,8 +1566,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What You'll Wish You'd Known",
@@ -1419,8 +1576,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "Made in USA",
@@ -1428,8 +1586,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "It's Charisma, Stupid",
@@ -1437,8 +1596,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "A Version 1.0",
@@ -1446,8 +1606,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What the Bubble Got Right",
@@ -1455,8 +1616,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "The Age of the Essay",
@@ -1464,8 +1626,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Great Hackers",
@@ -1473,8 +1636,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Mind the Gap",
@@ -1482,8 +1646,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "How to Make Wealth",
@@ -1491,8 +1656,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": true
+      "tags": [],
+      "isVisible": true,
+      "isFavorite": true
     },
     {
       "title": "The Word \"Hacker\"",
@@ -1500,8 +1666,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "What You Can't Say",
@@ -1509,8 +1676,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Hackers and Painters",
@@ -1518,8 +1686,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Why Nerds are Unpopular",
@@ -1527,8 +1696,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Design and Research",
@@ -1536,8 +1706,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Revenge of the Nerds",
@@ -1545,8 +1716,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Succinctness is Power",
@@ -1554,8 +1726,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Taste for Makers",
@@ -1563,8 +1736,9 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
     },
     {
       "title": "Being Popular",
@@ -1572,8 +1746,329 @@
       "author": "paul graham",
       "dateAdded": "2025-02-17",
       "type": "blogPost",
-      "tags": ["blog post"],
-      "favorite": false
+      "tags": [],
+      "isVisible": false,
+      "isFavorite": false
+    },
+    {
+      "title": "The Autobiography of Benjamin Franklin",
+      "url": "https://www.amazon.com/Autobiography-Benjamin-Franklin/dp/0486290735",
+      "author": "benjamin franklin",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["biography"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Walden",
+      "url": "https://www.amazon.com/Walden-Henry-David-Thoreau/dp/1505297729",
+      "author": "henry david thoreau",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["biography"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Jonathan Dickinson's Journal",
+      "url": "https://www.amazon.com/Jonathan-Dickinsons-Journal-Quaker-Among/dp/0912451106",
+      "author": "jonathan dickinson",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["florida", "exploration"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "New Smyrna: An Eighteenth Century Greek Odyssey",
+      "url": "https://www.amazon.com/New-Smyrna-Eighteenth-Century-Odyssey/dp/0813010527",
+      "author": "epaminondas panagopoulos",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["florida", "history"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "The Ideological Origins of the American Revolution",
+      "url": "https://www.amazon.com/Ideological-Origins-American-Revolution/dp/0674443020",
+      "author": "bernard bailyn",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["history"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Programming TypeScript",
+      "url": "https://www.amazon.com/Programming-TypeScript-Making-JavaScript-Applications/dp/1492037656",
+      "author": "boris cherny",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["engineering"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "1776",
+      "url": "https://www.amazon.com/1776-David-McCullough/dp/0743226720",
+      "author": "david mccullough",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["history"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "The Glorious Cause",
+      "url": "https://www.amazon.com/Glorious-Cause-American-Revolution-1763-1789/dp/0195162471",
+      "author": "robert middlekauff",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["history"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Steve Jobs",
+      "url": "https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537",
+      "author": "walter isaacson",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["biography"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Endurance: Shackleton's Incredible Voyage",
+      "url": "https://www.amazon.com/Endurance-Shackletons-Incredible-Alfred-Lansing/dp/0465062881",
+      "author": "alfred lansing",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["exploration"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Undaunted Courage",
+      "url": "https://www.amazon.com/Undaunted-Courage-Meriwether-Jefferson-American/dp/0684826976",
+      "author": "stephen ambrose",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["exploration", "history"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Last Train to Paradise",
+      "url": "https://www.amazon.com/Last-Train-Paradise-Spectacular-Railroad/dp/1400049474",
+      "author": "les standiford",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["florida", "history"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Rediscovering Wonderland",
+      "url": "https://www.amazon.com/Rediscovering-Wonderland-History-Florida-Tourism/dp/0813069149",
+      "author": "les standiford",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["florida", "exploration"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "The Father of Glacier National Park",
+      "url": "https://www.amazon.com/Father-Glacier-National-Park-Discoveries/dp/0982559895",
+      "author": "james willard schultz",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["exploration"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "The Wright Brothers",
+      "url": "https://www.amazon.com/Wright-Brothers-David-McCullough/dp/1476728755",
+      "author": "david mccullough",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["history"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Kitchen Confidential",
+      "url": "https://www.amazon.com/Kitchen-Confidential-Updated-Adventures-Underbelly/dp/0060899220",
+      "author": "anthony bourdain",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["biography", "cooking"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Salt, Fat, Acid, Heat",
+      "url": "https://www.amazon.com/Salt-Fat-Acid-Heat-Mastering/dp/1476753830",
+      "author": "samin nosrat",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["cooking"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "The Food Lab",
+      "url": "https://www.amazon.com/Food-Lab-Cooking-Through-Science/dp/0393081087",
+      "author": "j. kenji lópez-alt",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["cooking"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "A Land Remembered",
+      "url": "https://www.amazon.com/Land-Remembered-Patrick-Smith/dp/1561641162",
+      "author": "patrick smith",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["florida"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Meathead: The Science of Great Barbecue and Grilling",
+      "url": "https://www.amazon.com/Meathead-Science-Great-Barbecue-Grilling/dp/054401846X",
+      "author": "meathead goldwyn",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["cooking"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "A Mathematician's Apology",
+      "url": "https://www.amazon.com/Mathematicians-Apology-Canto-Classics/dp/110760463X",
+      "author": "g.h. hardy",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["math"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Travels of William Bartram",
+      "url": "https://www.amazon.com/Travels-William-Bartram/dp/0486200132",
+      "author": "william bartram",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["florida", "exploration"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Thirty-Seven Days of Peril",
+      "url": "https://www.amazon.com/Thirty-Seven-Days-Peril-Truman-Everts/dp/1429093064",
+      "author": "truman everts",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["exploration"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Founding Brothers",
+      "url": "https://www.amazon.com/Founding-Brothers-Revolutionary-Generation/dp/0375705244",
+      "author": "joseph ellis",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["history"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Scotland's Gift: Golf",
+      "url": "https://www.amazon.com/Scotlands-Gift-Golf-Charles-Macdonald/dp/1626540578",
+      "author": "c.b. macdonald",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["golf"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Every Shot Counts",
+      "url": "https://www.amazon.com/Every-Shot-Counts-Revolutionary-Approach/dp/1592407501",
+      "author": "mark broadie",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["golf"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "Harvey Penick's Little Red Book",
+      "url": "https://www.amazon.com/Harvey-Penicks-Little-Red-Book/dp/068871997X",
+      "author": "harvey penick",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["golf"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Managing Oneself",
+      "url": "https://www.amazon.com/Managing-Oneself-Harvard-Business-Classics/dp/142212312X",
+      "author": "peter drucker",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["business"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Ben Hogan's Five Lessons",
+      "url": "https://www.amazon.com/Ben-Hogans-Five-Lessons-Fundamentals/dp/0671612972",
+      "author": "ben hogan",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["golf"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Zero to One",
+      "url": "https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296",
+      "author": "peter thiel",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["business"],
+      "isVisible": true,
+      "isFavorite": false
+    },
+    {
+      "title": "Here Is New York",
+      "url": "https://www.amazon.com/Here-New-York-E-White/dp/1892145022",
+      "author": "e.b. white",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["essays"],
+      "isVisible": true,
+      "isFavorite": true
+    },
+    {
+      "title": "The Bitcoin Standard",
+      "url": "https://www.amazon.com/Bitcoin-Standard-Decentralized-Alternative-Central/dp/1119473861",
+      "author": "saifedean ammous",
+      "dateAdded": "2026-02-15",
+      "type": "book",
+      "tags": ["business"],
+      "isVisible": true,
+      "isFavorite": false
     }
   ]
 }

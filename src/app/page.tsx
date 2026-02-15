@@ -7,7 +7,7 @@ const LS_COMMAND = "ls";
 const SYSINFO_COMMAND = "sysinfo";
 
 const SYSINFO_OUTPUT =
-  "Hello! 👋\n\nI'm a senior full-stack engineer at Capital One working on Empath, a card-servicing platform used by tens of thousands of customer service agents that service millions of customers worldwide. Previously, I audited hedge funds at EY.";
+  "Hello! 👋\n\nI'm a senior full-stack engineer at Capital One working on Empath, a card-servicing platform used by tens of thousands of customer service agents to service millions of customers worldwide. Previously, I audited hedge funds.";
 
 const NAV_ITEMS = [
   { name: "blog", href: "/blog" },
@@ -115,7 +115,7 @@ export default function Page() {
       if (char === "\n") delay = 400;
       else if (fullText.slice(Math.max(0, i - 2), i) === "👋") delay = 600;
       else if (char === ".") delay = 400;
-      else if (char === ",") delay = 200;
+      else if (char === ",") delay = 300;
       timeout = setTimeout(typeNext, delay);
     }
 

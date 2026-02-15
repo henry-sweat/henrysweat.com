@@ -24,6 +24,7 @@ export default function Page() {
               title={item.title}
               author={item.author}
               url={item.url}
+              type={item.type}
               tags={item.tags}
               key={`key-${item.url}`}
             />

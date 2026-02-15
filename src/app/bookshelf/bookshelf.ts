@@ -7,7 +7,8 @@ interface IBookshelfItem {
   dateAdded: string;
   type: string;
   tags: string[];
-  favorite: boolean;
+  isVisible: boolean;
+  isFavorite: boolean;
 }
 
 export function getAllBookshelfItems(): IBookshelfItem[] {
