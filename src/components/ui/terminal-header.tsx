@@ -11,9 +11,9 @@ const NAV_ITEMS = [
 function Prompt({ cwd = "~" }: { cwd?: string }) {
   return (
     <>
-      <span className="text-blue-400">henry</span>
-      <span className="text-gray-600">@</span>
-      <span className="text-gray-500">mac-mini</span>
+      <span className="text-blue-400 group-hover:underline">henry</span>
+      <span className="text-gray-600 group-hover:underline">@</span>
+      <span className="text-gray-500 group-hover:underline">mac-mini</span>
       <span className="text-gray-600">:{cwd}</span>
       <span className="text-gray-500">&nbsp;$&nbsp;&nbsp;</span>
     </>
@@ -27,11 +27,7 @@ export default function TerminalHeader({ cwd = "~" }: { cwd?: string }) {
     <div className="w-full font-mono text-sm">
       <div className="flex h-6 w-full items-center justify-between">
         <Link href="/" className="group flex items-center">
-          <span className="text-blue-400 group-hover:underline">henry</span>
-          <span className="text-gray-600 group-hover:underline">@</span>
-          <span className="text-gray-500 group-hover:underline">mac-mini</span>
-          <span className="text-gray-600">:{cwd}</span>
-          <span className="text-gray-500">&nbsp;$&nbsp;&nbsp;</span>
+          <Prompt cwd={cwd} />
         </Link>
 
         {/* Desktop nav */}
