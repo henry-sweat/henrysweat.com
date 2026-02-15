@@ -12,13 +12,6 @@ export default function Page() {
       <TerminalHeader cwd="~/bookshelf" />
       <section className="mt-8 w-full space-y-8">
         <Section>
-          <p className="text-foreground">
-            {
-              "if my blog came up short, then look no further! here are the best things I have found on the internet, made by people much smarter than me."
-            }
-          </p>
-        </Section>
-        <Section>
           {bookshelfItems.map((item) =>
             item.favorite ? (
               <BookshelfCard
