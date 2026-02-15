@@ -33,6 +33,10 @@ function Cursor() {
 }
 
 export default function Page() {
+  const hasPlayed =
+    typeof window !== "undefined" &&
+    sessionStorage.getItem("homepage-animated") === "true";
+
   const [phase, setPhase] = useState<
     | "idle"
     | "ls-typing"
@@ -41,9 +45,11 @@ export default function Page() {
     | "sysinfo-output"
     | "done"
     | "finished"
-  >("idle");
+  >(hasPlayed ? "finished" : "idle");
   const [typedChars, setTypedChars] = useState(0);
-  const [sysinfoText, setSysinfoText] = useState("");
+  const [sysinfoText, setSysinfoText] = useState(
+    hasPlayed ? SYSINFO_OUTPUT : "",
+  );
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Phase 0: Blink cursor for a moment
@@ -126,6 +132,7 @@ export default function Page() {
   // Phase 5: Blink cursor then hide it
   useEffect(() => {
     if (phase !== "done") return;
+    sessionStorage.setItem("homepage-animated", "true");
     const timeout = setTimeout(() => setPhase("finished"), 3000);
     return () => clearTimeout(timeout);
   }, [phase]);
