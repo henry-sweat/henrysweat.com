@@ -33,11 +33,8 @@ function Cursor() {
 }
 
 export default function Page() {
-  const hasPlayed =
-    typeof window !== "undefined" &&
-    sessionStorage.getItem("homepage-animated") === "true";
-
   const [phase, setPhase] = useState<
+    | "init"
     | "idle"
     | "ls-typing"
     | "ls-result"
@@ -45,12 +42,20 @@ export default function Page() {
     | "sysinfo-output"
     | "done"
     | "finished"
-  >(hasPlayed ? "finished" : "idle");
+  >("init");
   const [typedChars, setTypedChars] = useState(0);
-  const [sysinfoText, setSysinfoText] = useState(
-    hasPlayed ? SYSINFO_OUTPUT : "",
-  );
+  const [sysinfoText, setSysinfoText] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Check sessionStorage on mount
+  useEffect(() => {
+    if (sessionStorage.getItem("homepage-animated") === "true") {
+      setSysinfoText(SYSINFO_OUTPUT);
+      setPhase("finished");
+    } else {
+      setPhase("idle");
+    }
+  }, []);
 
   // Phase 0: Blink cursor for a moment
   useEffect(() => {
