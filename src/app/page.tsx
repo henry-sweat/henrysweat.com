@@ -198,7 +198,6 @@ export default function Page() {
               key={item.name}
               href={item.href}
               className="text-blue-400 hover:underline"
-              onClick={() => setMenuOpen(false)}
             >
               {item.name}
             </Link>
