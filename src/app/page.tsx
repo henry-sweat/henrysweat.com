@@ -7,7 +7,7 @@ const LS_COMMAND = "ls";
 const SYSINFO_COMMAND = "sysinfo";
 
 const SYSINFO_OUTPUT =
-  "Hello! 👋 I'm a senior full-stack engineer at Capital One working on Empath, a card-servicing platform used by tens of thousands of customer service agents that service millions of customers worldwide. Previously, I audited hedge funds at EY.";
+  "Hello! 👋\n\nI'm a senior full-stack engineer at Capital One working on Empath, a card-servicing platform used by tens of thousands of customer service agents to service millions of customers worldwide. Previously, I audited hedge funds.";
 
 const NAV_ITEMS = [
   { name: "blog", href: "/blog" },
@@ -34,6 +34,7 @@ function Cursor() {
 
 export default function Page() {
   const [phase, setPhase] = useState<
+    | "init"
     | "idle"
     | "ls-typing"
     | "ls-result"
@@ -41,10 +42,20 @@ export default function Page() {
     | "sysinfo-output"
     | "done"
     | "finished"
-  >("idle");
+  >("init");
   const [typedChars, setTypedChars] = useState(0);
   const [sysinfoText, setSysinfoText] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Check sessionStorage on mount
+  useEffect(() => {
+    if (sessionStorage.getItem("homepage-animated") === "true") {
+      setSysinfoText(SYSINFO_OUTPUT);
+      setPhase("finished");
+    } else {
+      setPhase("idle");
+    }
+  }, []);
 
   // Phase 0: Blink cursor for a moment
   useEffect(() => {
@@ -92,7 +103,7 @@ export default function Page() {
           setPhase("sysinfo-output");
         }, 400);
       }
-    }, 50);
+    }, 120);
     return () => clearInterval(interval);
   }, [phase]);
 
@@ -101,20 +112,32 @@ export default function Page() {
     if (phase !== "sysinfo-output") return;
     const fullText = SYSINFO_OUTPUT;
     let i = 0;
-    const interval = setInterval(() => {
+    let timeout: NodeJS.Timeout;
+
+    function typeNext() {
       i++;
       setSysinfoText(fullText.slice(0, i));
       if (i >= fullText.length) {
-        clearInterval(interval);
         setPhase("done");
+        return;
       }
-    }, 18);
-    return () => clearInterval(interval);
+      const char = fullText[i - 1];
+      let delay = 18;
+      if (char === "\n") delay = 400;
+      else if (fullText.slice(Math.max(0, i - 2), i) === "👋") delay = 600;
+      else if (char === ".") delay = 400;
+      else if (char === ",") delay = 300;
+      timeout = setTimeout(typeNext, delay);
+    }
+
+    timeout = setTimeout(typeNext, 18);
+    return () => clearTimeout(timeout);
   }, [phase]);
 
   // Phase 5: Blink cursor then hide it
   useEffect(() => {
     if (phase !== "done") return;
+    sessionStorage.setItem("homepage-animated", "true");
     const timeout = setTimeout(() => setPhase("finished"), 3000);
     return () => clearTimeout(timeout);
   }, [phase]);
@@ -185,7 +208,7 @@ export default function Page() {
 
       {/* Sysinfo output */}
       {sysinfoText && (
-        <p className="mt-8 w-full leading-6 text-foreground">
+        <p className="mt-8 w-full whitespace-pre-wrap leading-6 text-foreground">
           {sysinfoText}
           <span
             className={`inline-block h-3.5 w-2 translate-y-0.5 bg-foreground ${

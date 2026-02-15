@@ -61,7 +61,6 @@ export default function TerminalHeader({ cwd = "~" }: { cwd?: string }) {
               key={item.name}
               href={item.href}
               className="text-blue-400 hover:underline"
-              onClick={() => setOpen(false)}
             >
               {item.name}
             </Link>
