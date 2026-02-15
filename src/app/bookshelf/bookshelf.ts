@@ -1,4 +1,4 @@
-import data from "@/data/bookshelf.json" assert { type: "json" };
+import data from "@/data/bookshelf.json";
 
 interface IBookshelfItem {
   title: string;
