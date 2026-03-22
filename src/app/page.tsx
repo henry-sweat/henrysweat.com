@@ -14,14 +14,14 @@ const NAV_ITEMS = [
   { name: "bookshelf", href: "/bookshelf" },
 ];
 
-function Prompt() {
+function Prompt({ showDollar = true }: { showDollar?: boolean }) {
   return (
     <>
       <span className="text-blue-400">henry</span>
       <span className="text-gray-600">@</span>
       <span className="text-gray-500">mac-mini</span>
       <span className="text-gray-600">:~</span>
-      <span className="text-gray-500">&nbsp;$&nbsp;&nbsp;</span>
+      {showDollar && <span className="text-gray-500">&nbsp;$&nbsp;&nbsp;</span>}
     </>
   );
 }
@@ -147,7 +147,7 @@ export default function Page() {
       {/* Header: prompt + nav */}
       <div className="flex h-6 w-full items-center justify-between">
         <div className="flex items-center">
-          <Prompt />
+          <Prompt showDollar={phase !== "finished"} />
           {phase === "idle" && <Cursor />}
           {phase === "ls-typing" && (
             <>
