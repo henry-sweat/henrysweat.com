@@ -15,7 +15,6 @@ function Prompt({ cwd = "~" }: { cwd?: string }) {
       <span className="text-gray-600 group-hover:underline">@</span>
       <span className="text-gray-500 group-hover:underline">mac-mini</span>
       <span className="text-gray-600">:{cwd}</span>
-      <span className="text-gray-500">&nbsp;$&nbsp;&nbsp;</span>
     </>
   );
 }
