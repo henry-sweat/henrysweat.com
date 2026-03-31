@@ -6,13 +6,14 @@ import TerminalHeader from "@/components/ui/terminal-header";
 import { Metadata } from "next";
 
 interface IProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function Page({ params }: IProps) {
-  const post = getBlogPost(params.slug);
+export default async function Page({ params }: IProps) {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
 
   if (!post) {
     notFound();
@@ -45,7 +46,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: IProps): Promise<Metadata> {
-  let post = getBlogPost(params.slug);
+  const { slug } = await params;
+  let post = getBlogPost(slug);
   return {
     title: post?.metadata.title,
     description: "a blog post by henry sweat",
