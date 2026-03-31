@@ -34,7 +34,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-tweet": "^3.3.0",
-    "sugar-high": "^0.9.5",
+    "sugar-high": "^1.0.0",
     "tailwind-merge": "^2.6.1",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2"
